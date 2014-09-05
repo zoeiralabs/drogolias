@@ -20,14 +20,14 @@ background-color:#FFFFFF;
 }
 #header{
 width:1000px;
-height:136px;
+height:133px;
 background:url(images/header_bg.jpg) no-repeat center;
 background-position:0px 0px;
 margin:auto;
 }
 #logo{
 float:left;
-padding:45px 0 0 15px;
+padding:0 0 0 5px;
 }
 #main_content{
 clear:both;
@@ -48,12 +48,12 @@ float:left;
 padding:0 5px 0 5px;
 }
 .top_right{
-width:728px;
+width:628px;
 float:right;
 }
 .big_banner{
 float:right;
-padding:10px 10px 0 0;
+padding:20px 15px 0 0;
 }
 /*---------------- menu tab----------------------*/
 #menu_tab{
