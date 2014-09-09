@@ -146,7 +146,7 @@ color:#000; text-decoration:underline;
 width:180px;
 height:auto;
 text-align:center;
-background:url(images/box_bottom_bg.gif) no-repeat center bottom;
+/*background:url(images/box_bottom_bg.gif) no-repeat center bottom;*/
 }
 .product_title{
 color:#ff8a00;
@@ -490,4 +490,17 @@ width:200px;
 text-align:center;
 color:#666666;
 padding:10px 0 0 60px;
+}
+
+/* PROMO */
+.bold {
+	font-weight: bold;
+}
+.promo {
+	margin: 20px 0;
+	padding: 5px;
+	color: #8a6d3b;
+	text-align: center;
+	background-color: #fcf8e3;
+	border-color: #faebcc;
 }
