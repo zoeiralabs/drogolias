@@ -209,7 +209,7 @@ margin:0 0 5px 5px;
 }
 .oferta_img{
 float:left;
-padding:10px 0 0 10px;
+padding:12px 0 0 30px;
 }
 .oferta_title{
 font-size:15px;
@@ -497,7 +497,7 @@ padding:10px 0 0 60px;
 	font-weight: bold;
 }
 .promo {
-	margin: 20px 0;
+	margin: 10px 0;
 	padding: 5px;
 	color: #8a6d3b;
 	text-align: center;
