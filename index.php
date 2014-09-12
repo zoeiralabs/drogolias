@@ -1,29 +1,58 @@
 <?php
+header('Content-Type: text/html; charset=utf-8');
 
 $imgs = array(
+  'img/aline.jpg',
+  'img/jesus.jpg',
+  'img/alf.jpg',
   'img/dieguez.jpg',
   'img/golias.jpg',
   'img/sapo.jpg'
 );
 
 $textos = array(
+  'aaaa',
+  'jjjjj',
+  'alffff',
   'Tomei e injetei todos os remédios receitados pela Drogolias e obtive um resultado impressionante em 2 semanas.',
   'Meu nome é Bruno Barbosa da Silva Cortopassi, tenho 14 anos, sou aqui de Santos e tô jogando com a Alemanha.',
   'Perdi 80kg em 4 semanas graças a Drogolias. Melhorei minha autoestima, é como se eu tivesse voltado no tempo e fosse um jovem novamente.'
 );
 
-$array = array(0, 1, 2);
-shuffle($array);
+$periodos = array(
+  '5 semanas',
+  '4 semanas',
+  '3 semanas',
+  '2 semanas',
+  '3 semanas',
+  '4 semanas'
+);
 
-$banner1 = array_pop($array);
-$banner2 = array_pop($array);
+$autores = array(
+  'Aline, São Paulo-SP',
+  'Thiago, Ribeirão Preto-SP',
+  'Leandro, Santos-SP',
+  'Rodrigo, Agudos-SP',
+  'Bruno, Santos-SP',
+  'Gabriel, São Paulo-SP'
+);
+
+//$array = array(0, 1, 2, 3, 4, 5);
+//shuffle($array);
+
+$array = array(2, 1, 0);
+
+$banners = array();
+$banners[0] = array_pop($array);
+$banners[1] = array_pop($array);
+$banners[2] = array_pop($array);
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Drogolias - Vem ser bolado!</title>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -246,51 +275,16 @@ function MM_preloadImages() { //v3.0
 
       <div class="title_box">Depoimentos</div>
 
-       <div class="product_title"><a href="#">Resultado em 2 semanas</a></div>
-        <div class="product_img"><a href="#"><img src="<?=$imgs[$banner1]?>" alt="" border="0" /></a></div>
-        <div class="prod_price" style="text-align: justify">
-          "<?=$textos[$banner1]?>"
-          <span style="color: #888888">(Rodrigo, Agudos-SP)</span>
+      <? foreach ($banners as $banner) { ?>
+        <div class="border_box">
+         <div class="product_title"><a href="#">Resultado em <?=$periodos[$banner]?></a></div>
+          <div class="product_img"><a href="#"><img src="<?=$imgs[$banner]?>" alt="" border="0" /></a></div>
+          <div class="prod_price" style="text-align: justify">
+            "<?=$textos[$banner]?>"
+            <span style="color: #888888">(<?=$autores[$banner]?>)</span>
+          </div>
         </div>
-      </div>
-
-      <div class="product_title"><a href="#">Resultado em 2 semanas</a></div>
-        <div class="product_img"><a href="#"><img src="<?=$imgs[$banner2]?>" alt="" border="0" /></a></div>
-        <div class="prod_price" style="text-align: justify">
-          "<?=$textos[$banner2]?>"
-          <span style="color: #888888">(Rodrigo, Agudos-SP)</span>
-        </div>
-      </div>
-
-
-
-
-      <!-- <div class="border_box">
-        <div class="product_title"><a href="#">Resultado em 2 semanas</a></div>
-        <div class="product_img"><a href="#"><img src="img/dieguez.jpg" alt="" border="0" /></a></div>
-        <div class="prod_price" style="text-align: justify">
-          "Tomei e injetei todos os remédios receitados pela Drogolias e obtive um resultado impressionante em 2 semanas."
-          <span style="color: #888888">(Rodrigo, Agudos-SP)</span>
-        </div>
-      </div>
-
-      <div class="border_box">
-        <div class="product_title"><a href="#">Resultado em 3 semanas</a></div>
-        <div class="product_img"><a href="#"><img src="img/golias.jpg" alt="" border="0" /></a></div>
-        <div class="prod_price" style="text-align: justify">
-          "Meu nome é Bruno Barbosa da Silva Cortopassi, tenho 14 anos, sou aqui de Santos e tô jogando com a Alemanha."
-          <span style="color: #888888">(Bruno, Santos-SP)</span>
-        </div>
-      </div>
-
-       <div class="border_box">
-        <div class="product_title"><a href="#">Resultado em 4 semanas</a></div>
-        <div class="product_img"><a href="#"><img src="img/sapo.jpg" alt="" border="0" /></a></div>
-        <div class="prod_price" style="text-align: justify">
-          "Perdi 80kg em 4 semanas graças a Drogolias. Melhorei minha autoestima, é como se eu tivesse voltado no tempo e fosse um jovem novamente."
-          <span style="color: #888888">(Gabriel, São Paulo-SP)</span>
-        </div>
-      </div> -->
+      <? } ?>
 
       <div class="title_box">Busca</div>
       <div class="border_box">
