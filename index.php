@@ -11,18 +11,18 @@ $imgs = array(
 );
 
 $textos = array(
-  'aaaa',
-  'jjjjj',
-  'alffff',
+  'Depois que conheci a Drogolias minha alimentação melhorou e hoje só repito o almoço 3 vezes. Meu corpo e meu cabelo mudaram, não preciso mais de chapinha.',
+  'Eu multipliquei pães e peixes, mas a Drogolias multiplicou meus músculos e minha autoestima. Amém, irmãos?',
+  'A Drogolias complementa minha dieta orgânica. Meu produto preferido é o Muffin de Whey. Perdi todos meus cabelos, mas o importante é que ganhei músculos.',
   'Tomei e injetei todos os remédios receitados pela Drogolias e obtive um resultado impressionante em 2 semanas.',
   'Meu nome é Bruno Barbosa da Silva Cortopassi, tenho 14 anos, sou aqui de Santos e tô jogando com a Alemanha.',
   'Perdi 80kg em 4 semanas graças a Drogolias. Melhorei minha autoestima, é como se eu tivesse voltado no tempo e fosse um jovem novamente.'
 );
 
 $periodos = array(
-  '5 semanas',
-  '4 semanas',
   '3 semanas',
+  '4 semanas',
+  '5 semanas',
   '2 semanas',
   '3 semanas',
   '4 semanas'
@@ -30,7 +30,7 @@ $periodos = array(
 
 $autores = array(
   'Aline, São Paulo-SP',
-  'Thiago, Ribeirão Preto-SP',
+  'Jesus, Belém-PA',
   'Leandro, Santos-SP',
   'Rodrigo, Agudos-SP',
   'Bruno, Santos-SP',
