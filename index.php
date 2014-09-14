@@ -37,10 +37,8 @@ $autores = array(
   'Gabriel, São Paulo-SP'
 );
 
-//$array = array(0, 1, 2, 3, 4, 5);
-//shuffle($array);
-
-$array = array(2, 1, 0);
+$array = array(0, 1, 2, 3, 4, 5);
+shuffle($array);
 
 $banners = array();
 $banners[0] = array_pop($array);
