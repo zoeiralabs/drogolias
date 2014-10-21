@@ -7,7 +7,8 @@ $imgs = array(
   'img/alf.jpg',
   'img/dieguez.jpg',
   'img/golias.jpg',
-  'img/sapo.jpg'
+  'img/sapo.jpg',
+  'img/stella.jpg'
 );
 
 $textos = array(
@@ -16,7 +17,8 @@ $textos = array(
   'A Drogolias complementa minha dieta orgânica. Meu produto preferido é o Muffin de Whey. Perdi todos meus cabelos, mas o importante é que ganhei músculos.',
   'Tomei e injetei todos os remédios receitados pela Drogolias e obtive um resultado impressionante em 2 semanas.',
   'Meu nome é Bruno Barbosa da Silva Cortopassi, tenho 14 anos, sou aqui de Santos e tô jogando com a Alemanha.',
-  'Perdi 80kg em 4 semanas graças a Drogolias. Melhorei minha autoestima, é como se eu tivesse voltado no tempo e fosse um jovem novamente.'
+  'Perdi 80kg em 4 semanas graças a Drogolias. Melhorei minha autoestima, é como se eu tivesse voltado no tempo e fosse um jovem novamente.',
+  'Graças aos remédios da Drogolias consegui mudar de sexo em poucas semanas, além disso, meu tríceps obteve um crescimento incrível.'
 );
 
 $periodos = array(
@@ -25,7 +27,8 @@ $periodos = array(
   '5 semanas',
   '2 semanas',
   '3 semanas',
-  '4 semanas'
+  '4 semanas',
+  '9 semanas'
 );
 
 $autores = array(
@@ -34,14 +37,15 @@ $autores = array(
   'Leandro, Santos-SP',
   'Rodrigo, Agudos-SP',
   'Bruno, Santos-SP',
-  'Gabriel, São Paulo-SP'
+  'Gabriel, São Paulo-SP',
+  'Stella, São Paulo-SP'
 );
 
 $array = array(0, 1, 2, 3, 4, 5);
 shuffle($array);
 
 $banners = array();
-$banners[0] = array_pop($array);
+$banners[0] = 6;
 $banners[1] = array_pop($array);
 $banners[2] = array_pop($array);
 
