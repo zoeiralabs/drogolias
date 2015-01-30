@@ -20,7 +20,7 @@ $textos = array(
   'Meu nome é Bruno Barbosa da Silva Cortopassi, tenho 14 anos, sou aqui de Santos e tô jogando com a Alemanha.',
   'Perdi 80kg em 4 semanas graças a Drogolias. Melhorei minha autoestima, é como se eu tivesse voltado no tempo e fosse um jovem novamente.',
   'Graças aos remédios da Drogolias consegui mudar de sexo em poucas semanas, além disso, meu tríceps obteve um crescimento incrível.',
-  'Eu era um estagiário frango e hoje, após 2 semanas utilizando os remédios da Drogolias estou a frente de uma grande equipe.'
+  'Eu era um estagiário frango e hoje, após 3 semanas utilizando os remédios da Drogolias estou a frente de uma grande equipe.'
 );
 
 $periodos = array(
