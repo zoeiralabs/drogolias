@@ -9,7 +9,8 @@ $imgs = array(
   'img/golias.jpg',
   'img/sapo.jpg',
   'img/stella.jpg',
-  'img/fatala.jpg'
+  'img/fatala.jpg',
+  'img/sergio.jpg'
 );
 
 $textos = array(
@@ -20,7 +21,8 @@ $textos = array(
   'Meu nome é Bruno Barbosa da Silva Cortopassi, tenho 14 anos, sou aqui de Santos e tô jogando com a Alemanha.',
   'Perdi 80kg em 4 semanas graças a Drogolias. Melhorei minha autoestima, é como se eu tivesse voltado no tempo e fosse um jovem novamente.',
   'Graças aos remédios da Drogolias consegui mudar de sexo em poucas semanas, além disso, meu tríceps obteve um crescimento incrível.',
-  'Eu era um estagiário frango e hoje, após 3 semanas utilizando os remédios da Drogolias estou a frente de uma grande equipe.'
+  'Eu era um estagiário frango e hoje, após 3 semanas utilizando os remédios da Drogolias estou a frente de uma grande equipe.',
+  'Eu não acreditava nesses remédios milagrosos, porém resolvi fazer um teste e hoje sou a prova que milagres acontecem.'
 );
 
 $periodos = array(
@@ -31,7 +33,8 @@ $periodos = array(
   '3 semanas',
   '4 semanas',
   '9 semanas',
-  '3 semanas'
+  '3 semanas',
+  '4 semanas'
 );
 
 $autores = array(
@@ -42,14 +45,15 @@ $autores = array(
   'Bruno, Santos-SP',
   'Gabriel, São Paulo-SP',
   'Stella, São Paulo-SP',
-  'Fatala, São Paulo-SP'
+  'Fatala, São Paulo-SP',
+  'Sergio, Socoraba-SP'
 );
 
-$array = array(0, 1, 2, 3, 4, 5, 6);
+$array = array(0, 1, 2, 3, 4, 5, 6, 7);
 shuffle($array);
 
 $banners = array();
-$banners[0] = 7;
+$banners[0] = 8;
 $banners[1] = array_pop($array);
 $banners[2] = array_pop($array);
 
