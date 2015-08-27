@@ -10,7 +10,8 @@ $imgs = array(
   'img/sapo.jpg',
   'img/stella.jpg',
   'img/fatala.jpg',
-  'img/sergio.jpg'
+  'img/sergio.jpg',
+  'img/jair.jpg'
 );
 
 $textos = array(
@@ -22,7 +23,8 @@ $textos = array(
   'Perdi 80kg em 4 semanas graças a Drogolias. Melhorei minha autoestima, é como se eu tivesse voltado no tempo e fosse um jovem novamente.',
   'Graças aos remédios da Drogolias consegui mudar de sexo em poucas semanas, além disso, meu tríceps obteve um crescimento incrível.',
   'Eu era um estagiário frango e hoje, após 3 semanas utilizando os remédios da Drogolias estou a frente de uma grande equipe.',
-  'Eu não acreditava nesses remédios milagrosos, porém resolvi fazer um teste e hoje sou a prova que milagres acontecem.'
+  'Eu não acreditava nesses remédios milagrosos, porém resolvi fazer um teste e hoje sou a prova que milagres acontecem.',
+  'Embora meu cabelo tenha caído e ganhado 6 graus de miopia, ganhei 100 gramas de puro músculo e auto-confiança. Hoje sou PHP!'
 );
 
 $periodos = array(
@@ -34,7 +36,8 @@ $periodos = array(
   '4 semanas',
   '9 semanas',
   '3 semanas',
-  '4 semanas'
+  '4 semanas',
+  '10 semanas'
 );
 
 $autores = array(
@@ -46,14 +49,15 @@ $autores = array(
   'Gabriel, São Paulo-SP',
   'Stella, São Paulo-SP',
   'Fatala, São Paulo-SP',
-  'Sergio, Socoraba-SP'
+  'Sergio, Socoraba-SP',
+  'Jair, Diadema-SP'
 );
 
-$array = array(0, 1, 2, 3, 4, 5, 6, 7);
+$array = array(0, 1, 2, 3, 4, 5, 6, 7, 8);
 shuffle($array);
 
 $banners = array();
-$banners[0] = 8;
+$banners[0] = 9;
 $banners[1] = array_pop($array);
 $banners[2] = array_pop($array);
 
