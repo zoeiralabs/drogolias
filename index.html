@@ -1,67 +1,3 @@
-<?php
-header('Content-Type: text/html; charset=utf-8');
-
-$imgs = array(
-  'img/aline.jpg',
-  'img/jesus.jpg',
-  'img/alf.jpg',
-  'img/dieguez.jpg',
-  'img/golias.jpg',
-  'img/sapo.jpg',
-  'img/stella.jpg',
-  'img/fatala.jpg',
-  'img/sergio.jpg',
-  'img/jair.jpg'
-);
-
-$textos = array(
-  'Depois que conheci a Drogolias minha alimentação melhorou e hoje só repito o almoço 3 vezes. Meu corpo e meu cabelo mudaram, não preciso mais de chapinha.',
-  'Eu multipliquei pães e peixes, mas a Drogolias multiplicou meus músculos e minha autoestima. Amém, irmãos?',
-  'A Drogolias complementa minha dieta orgânica. Meu produto preferido é o Muffin de Whey. Perdi todos meus cabelos, mas o importante é que ganhei músculos.',
-  'Tomei e injetei todos os remédios receitados pela Drogolias e obtive um resultado impressionante em 2 semanas.',
-  'Meu nome é Bruno Barbosa da Silva Cortopassi, tenho 14 anos, sou aqui de Santos e tô jogando com a Alemanha.',
-  'Perdi 80kg em 4 semanas graças a Drogolias. Melhorei minha autoestima, é como se eu tivesse voltado no tempo e fosse um jovem novamente.',
-  'Graças aos remédios da Drogolias consegui mudar de sexo em poucas semanas, além disso, meu tríceps obteve um crescimento incrível.',
-  'Eu era um estagiário frango e hoje, após 3 semanas utilizando os remédios da Drogolias estou a frente de uma grande equipe.',
-  'Eu não acreditava nesses remédios milagrosos, porém resolvi fazer um teste e hoje sou a prova que milagres acontecem.',
-  'Embora meu cabelo tenha caído e ganhado 6 graus de miopia, ganhei 100 gramas de puro músculo e auto-confiança. Hoje sou PHP!'
-);
-
-$periodos = array(
-  '3 semanas',
-  '4 semanas',
-  '5 semanas',
-  '2 semanas',
-  '3 semanas',
-  '4 semanas',
-  '9 semanas',
-  '3 semanas',
-  '4 semanas',
-  '10 semanas'
-);
-
-$autores = array(
-  'Aline, São Paulo-SP',
-  'Jesus, Belém-PA',
-  'Leandro, Santos-SP',
-  'Rodrigo, Agudos-SP',
-  'Bruno, Santos-SP',
-  'Gabriel, São Paulo-SP',
-  'Stella, São Paulo-SP',
-  'Fatala, São Paulo-SP',
-  'Sergio, Socoraba-SP',
-  'Jair, Diadema-SP'
-);
-
-$array = array(0, 1, 2, 3, 4, 5, 6, 7, 8);
-shuffle($array);
-
-$banners = array();
-$banners[0] = 9;
-$banners[1] = array_pop($array);
-$banners[2] = array_pop($array);
-
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -90,19 +26,7 @@ function MM_preloadImages() { //v3.0
         <div class="lang_text">Idiomas:</div>
         <a href="#" class="lang"><img src="img/br.jpg" alt="" border="0" /></a> <a href="#" class="lang"><img src="img/ch.png" alt="" border="0" /></a>
       </div>
-      <div class="big_banner">
-
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- Drogolias - Topo -->
-        <ins class="adsbygoogle"
-             style="display:inline-block;width:600px;height:80px"
-             data-ad-client="ca-pub-6268201630210149"
-             data-ad-slot="2263387778"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-
-      </div>
+      <div class="big_banner"><!-- Google Adsense --></div>
     </div>
     <div id="logo">
       <a href="#"><img src="img/logo.png" alt="" border="0" width="357" height="133" /></a>
@@ -161,17 +85,7 @@ function MM_preloadImages() { //v3.0
         <input type="text" name="newsletter" class="newsletter_input" value="seu email"/>
         <a href="#" class="join">inscrever</a>
       </div>
-
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- Drogolias - Left -->
-      <ins class="adsbygoogle"
-           style="display:inline-block;width:180px;height:200px"
-           data-ad-client="ca-pub-6268201630210149"
-           data-ad-slot="2123786978"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-
+      <!-- Google Adsense -->
     </div>
     <!-- end of left content -->
     <div class="center_content">
@@ -288,17 +202,86 @@ function MM_preloadImages() { //v3.0
     <div class="right_content">
 
       <div class="title_box">Depoimentos</div>
-
-      <? foreach ($banners as $banner) { ?>
         <div class="border_box">
-         <div class="product_title"><a href="#">Resultado em <?=$periodos[$banner]?></a></div>
-          <div class="product_img"><a href="#"><img src="<?=$imgs[$banner]?>" alt="" border="0" /></a></div>
+         <div class="product_title"><a href="#">Resultado em 5 semanas</a></div>
+          <div class="product_img"><a href="#"><img src="img/alf.jpg" alt="" border="0" /></a></div>
           <div class="prod_price" style="text-align: justify">
-            "<?=$textos[$banner]?>"
-            <span style="color: #888888">(<?=$autores[$banner]?>)</span>
+            "A Drogolias complementa minha dieta orgânica. Meu produto preferido é o Muffin de Whey. Perdi todos meus cabelos, mas o importante é que ganhei músculos."
+            <span style="color: #888888">(Leandro, Santos-SP)</span>
           </div>
         </div>
-      <? } ?>
+        <div class="border_box">
+         <div class="product_title"><a href="#">Resultado em 4 semanas</a></div>
+          <div class="product_img"><a href="#"><img src="img/jesus.jpg" alt="" border="0" /></a></div>
+          <div class="prod_price" style="text-align: justify">
+            "Eu multipliquei pães e peixes, mas a Drogolias multiplicou meus músculos e minha autoestima."
+            <span style="color: #888888">(Jesus, Belém-PA)</span>
+          </div>
+        </div>
+        <div class="border_box">
+         <div class="product_title"><a href="#">Resultado em 3 semanas</a></div>
+          <div class="product_img"><a href="#"><img src="img/fatala.jpg" alt="" border="0" /></a></div>
+          <div class="prod_price" style="text-align: justify">
+            "Eu era um magro estagiário e hoje, após 3 semanas utilizando os remédios da Drogolias estou a frente de uma grande equipe."
+            <span style="color: #888888">(Fatala, São Paulo-SP)</span>
+          </div>
+        </div>
+        <div class="border_box">
+         <div class="product_title"><a href="#">Resultado em 4 semanas</a></div>
+          <div class="product_img"><a href="#"><img src="img/sergio.jpg" alt="" border="0" /></a></div>
+          <div class="prod_price" style="text-align: justify">
+            "Eu não acreditava nesses remédios milagrosos, porém resolvi fazer um teste e hoje sou a prova que milagres acontecem."
+            <span style="color: #888888">(Sergio, Socoraba-SP)</span>
+          </div>
+        </div>
+        <div class="border_box">
+         <div class="product_title"><a href="#">Resultado em 4 semanas</a></div>
+          <div class="product_img"><a href="#"><img src="img/sapo.jpg" alt="" border="0" /></a></div>
+          <div class="prod_price" style="text-align: justify">
+            "Perdi 80kg em 4 semanas graças a Drogolias. Melhorei minha autoestima, é como se eu tivesse voltado no tempo e fosse um jovem novamente."
+            <span style="color: #888888">(Gabriel, São Paulo-SP)</span>
+          </div>
+        </div>
+        <div class="border_box">
+         <div class="product_title"><a href="#">Resultado em 10 semanas</a></div>
+          <div class="product_img"><a href="#"><img src="img/jair.jpg" alt="" border="0" /></a></div>
+          <div class="prod_price" style="text-align: justify">
+            "Embora meu cabelo tenha caído e ganhado 6 graus de miopia, ganhei 100 gramas de puro músculo e auto-confiança. Hoje sou PHP!"
+            <span style="color: #888888">(Jair, Diadema-SP)</span>
+          </div>
+        </div>
+        <div class="border_box">
+         <div class="product_title"><a href="#">Resultado em 3 semanas</a></div>
+          <div class="product_img"><a href="#"><img src="img/golias.jpg" alt="" border="0" /></a></div>
+          <div class="prod_price" style="text-align: justify">
+            "Meu nome é Bruno Barbosa da Silva Cortopassi, tenho 14 anos, sou aqui de Santos e tô jogando com a Alemanha."
+            <span style="color: #888888">(Bruno, Santos-SP)</span>
+          </div>
+        </div>
+        <div class="border_box">
+         <div class="product_title"><a href="#">Resultado em 9 semanas</a></div>
+          <div class="product_img"><a href="#"><img src="img/stella.jpg" alt="" border="0" /></a></div>
+          <div class="prod_price" style="text-align: justify">
+            "Graças aos remédios da Drogolias consegui mudar de sexo em poucas semanas, além disso, meu tríceps obteve um crescimento incrível."
+            <span style="color: #888888">(Salsicha / Stella, São Paulo-SP)</span>
+          </div>
+        </div>
+        <div class="border_box">
+         <div class="product_title"><a href="#">Resultado em 2 semanas</a></div>
+          <div class="product_img"><a href="#"><img src="img/dieguez.jpg" alt="" border="0" /></a></div>
+          <div class="prod_price" style="text-align: justify">
+            "Tomei e injetei todos os remédios receitados pela Drogolias e obtive um resultado impressionante em 2 semanas."
+            <span style="color: #888888">(Rodrigo, Agudos-SP)</span>
+          </div>
+        </div>
+        <div class="border_box">
+         <div class="product_title"><a href="#">Resultado em 3 semanas</a></div>
+          <div class="product_img"><a href="#"><img src="img/aline.jpg" alt="" border="0" /></a></div>
+          <div class="prod_price" style="text-align: justify">
+            "Depois que conheci a Drogolias minha alimentação melhorou e hoje só repito o almoço 3 vezes. Meu corpo e meu cabelo mudaram."
+            <span style="color: #888888">(Aline, São Paulo-SP)</span>
+          </div>
+        </div>
 
       <div class="title_box">Busca</div>
       <div class="border_box">
@@ -310,17 +293,7 @@ function MM_preloadImages() { //v3.0
           <span class="border_cart"></span> Total: <span class="price">R$ 0,0</span> </div>
         <div class="cart_icon"><a href="#"><img src="images/shoppingcart.png" alt="" width="35" height="35" border="0" /></a></div>
       </div>
-
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- Drogolias - Cantos -->
-      <ins class="adsbygoogle"
-           style="display:inline-block;width:180px;height:200px"
-           data-ad-client="ca-pub-6268201630210149"
-           data-ad-slot="2123786978"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-
+      <!-- Google Adsense -->
     </div>
     <!-- end of right content -->
   </div>
@@ -343,17 +316,6 @@ function MM_preloadImages() { //v3.0
 <img src="img/jaja.png" style="position:fixed;bottom:0;right:0" width="60" height="60"
 onmouseover="this.src='img/jaja2.png'"
 onmouseout="this.src='img/jaja.png'">
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-54595642-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
 </body>
 </html>
